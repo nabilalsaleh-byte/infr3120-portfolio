@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Contact Me</title>
+    <link rel="stylesheet" href="css/main.css"> <!-- links to an external CSS file for styling -->
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 601px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width: 1025px)">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contact Me</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact Me</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Get in Touch</h2> 
+
+            <form>
+
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required> <!-- required means the user cannot submit form without filling out field-->
+                </p>
+
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required> <!-- type="email" checks if the user entered a valid email address -->
+                </p>
+
+                <p>
+                    <label for="phone">Cell No.:</label>
+                    <input
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        pattern="[0-9]{10}"   
+                        placeholder="1234567890" 
+                        required
+                    >
+                </p>
+
+                <p>
+                    <label for="comments">Comments:</label>
+                </p>
+
+                <p>
+                    <textarea id="comments" name="comments" rows="6" cols="40" required></textarea>
+                </p>
+
+                <p>
+                    <input type="submit" value="Submit"> <!-- This button submits the form -->
+                </p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Email: nabil.alsaleh@ontariotechu.net</p>
+        <p>&copy; 2026 Nabil Al-Saleh. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
